@@ -7,15 +7,14 @@ import React from 'react';
 /*
  * Local import
  */
+import Chat from 'src/components/Chat';
 
 
 /*
  * Code
  */
 const App = () => (
-  <div id="app">
-    <div id="app-hello">Hello World!</div>
-  </div>
+  <Chat />
 );
 
 
