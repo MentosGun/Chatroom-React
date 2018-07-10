@@ -1,7 +1,15 @@
 /*
+ * Consts
+ */
+const VIEW_CHANGE = 'VIEW_CHANGE';
+
+
+/*
  * Initial state
  */
-const initialState = {};
+const initialState = {
+  logged: true,
+};
 
 
 /*
@@ -9,7 +17,12 @@ const initialState = {};
  */
 export default (state = initialState, action = {}) => {
   switch (action.type) {
-    // case 'DO_SOMETHING':
+    case VIEW_CHANGE: {
+      return {
+        ...state,
+        logged: !state.logged,
+      };
+    }
 
     default:
       return state;
@@ -20,6 +33,6 @@ export default (state = initialState, action = {}) => {
 /*
  * Action creators
  */
-export const doSomething = () => ({
-  type: 'DO_SOMETHING',
+export const switchView = () => ({
+  type: VIEW_CHANGE,
 });

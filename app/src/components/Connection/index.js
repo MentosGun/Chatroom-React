@@ -7,18 +7,19 @@ import React from 'react';
 /*
  * Local import
  */
-import Chat from 'src/containers/Chat';
 
 
 /*
  * Code
  */
-const App = () => (
-  <Chat />
+const Connection = () => (
+  <div id="connection">
+    Connection
+  </div>
 );
 
 
 /*
  * Export default
  */
-export default App;
+export default Connection;
